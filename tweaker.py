@@ -1,6 +1,6 @@
-data_file = open('/root/mlops/data.txt','r')
-input_file = open('/root/mlops/input.txt','r')
-accuracy_file = open('/root/mlops/accuracy.txt','r')
+train_data="\\mlops1/train/"
+test_data="\\mlops1/test/"
+accuracy_file = open('/root/mlops1/accuracy.txt','r')
 
 data = data_file.read()
 data = data.split('\n')
@@ -109,8 +109,8 @@ data_file.close()
 input_file.close()
 
 #opening both the files in write mode
-data_file = open('/root/mlops/data.txt','w')
-input_file = open('/root/mlops/input.txt','w')
+train_data="\\mlops1/train/"
+test_data="\\mlops1/test/"
 
 data_file_data = str(old_accuracy) + '\n' + str(layer) + '\n' + str(line) + '\n' + str(entered_data) + '\n' + str(old_data) + '\n' + str(index_fc)
 
